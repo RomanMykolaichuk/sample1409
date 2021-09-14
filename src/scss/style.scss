@@ -1,0 +1,14 @@
+$color: black;
+$bkcolor: blue;
+
+@mixin sample{
+    font-size:20px;
+    border: 2px solid mix($bkcolor, #000, 50%);
+    border-radius: 1rem;
+}
+
+.content{
+    color:$color;
+    background-color: $bkcolor;
+    @include sample;
+}
